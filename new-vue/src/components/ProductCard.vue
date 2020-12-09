@@ -17,20 +17,12 @@
 <script>
   export default {
     name: "ProductCard",
-    data() {
-      return {
-        title: 'Стол Jim',
-        price: 999999,
-        imgUrl: 'https://hoff.ru/upload/iblock/8c9/8c989500ee8639b9e3aa267b1888b4af.jpg',
-        count: 20
-      }
-    }
+    props: ['title', 'price', 'imgUrl', 'count']
 }
 </script>
 
-<style scoped>
+<style type="scss" scoped>
   .product-card {
-    min-width: 1200px;
     margin: 0;
     padding: 0;
   }

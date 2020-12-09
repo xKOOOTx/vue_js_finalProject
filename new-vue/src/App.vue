@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <ProductCard/>
+    <ProductList/>
   </div>
 </template>
 
 <script>
 
 // import MyComponent from '@/components/MyComponent'
-import ProductCard from '@/components/ProductCard'
+import ProductList from '@/components/ProductList'
 
 export default {
   name: 'App',
   components: {
-    ProductCard
+    ProductList
   },
   // sass-loader
   module: {
