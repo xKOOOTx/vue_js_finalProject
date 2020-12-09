@@ -5,8 +5,8 @@
       <div class="main-information flex">
         <img src="@/assets/images/couch.jpg" alt="main_photo" width="500px">
         <div class="info">
-          <h2> {{ fullName }} </h2>
-          <strong>Бизнес-коуч</strong>
+          <h2> {{ getAuthorFullName }} </h2>
+          <strong style="text-align: center">Бизнес-коуч</strong>
           <ul class="list">
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, tempore.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet.</li>
@@ -30,7 +30,23 @@
       <button type="button"
               @click="nextPage()">Следующая</button>
       <p>Страница {{ currentPage }} из {{ pages }}</p>
-      <!--    <input type="text" @input="firstName = $event.target.value">-->
+      <hr>
+      <div class="counterButton">
+        <p>Просто проба кнопки выбора</p>
+        <p>Выберите кол-во продуктов</p>
+        <div class="counterButton__block">
+          <button
+              type="button"
+              @click="decreaseCount">-</button>
+          <input type="number"
+                 :value="count"
+                 :min="minCount"
+                 :max="maxCount" />
+          <button
+              type="button"
+              @click="increaseCount()">+</button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -61,7 +77,10 @@
             }
           ],
           pages: 3,
-          currentPage: 1
+          currentPage: 1,
+          count: 1,
+          maxCount: 10,
+          minCount: 1
         }
       },
       computed: {
@@ -86,6 +105,16 @@
         },
         loadUsers(page) {
           console.log(`Загрузка пользователей: страница ${page}`)
+        },
+        increaseCount() {
+          if (this.count < this.maxCount) {
+            this.count++
+          }
+        },
+        decreaseCount() {
+          if (this.count > this.minCount) {
+            this.count--
+          }
         }
       },
     watch: {
@@ -105,5 +134,28 @@
   }
   h2 {
     margin-bottom: 14px;
+  }
+  .counterButton {
+    &__block {
+      & input,
+      & button {
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        &:hover,
+        &:focus,
+        &:active {
+          outline: none;
+          border: 1px solid darken(#ccc, 25%);
+        }
+      }
+      & button {
+        &:hover {
+          background-color: darken(#ccc, .5%);
+        }
+        &:active {
+          background-color: darken(#ccc, 25%);
+        }
+      }
+    }
   }
 </style>
