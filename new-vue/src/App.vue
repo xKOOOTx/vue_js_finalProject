@@ -12,6 +12,19 @@ export default {
   name: 'App',
   components: {
     MyComponent
-  }
+  },
+  // sass-loader
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      }
+    ]
+  },
 }
 </script>
