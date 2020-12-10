@@ -25,12 +25,6 @@
   .product-card {
     margin: 0;
     padding: 0;
-    border: 1px solid lighten(#ccc,.5%);
-
-    &:hover {
-      cursor: pointer;
-      box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.75);
-    }
   }
 
   .product-card__info {
@@ -46,7 +40,7 @@
 
     border: 1px solid #ccc;
     outline: none;
-    background-color: #ccc;
+    color: #fff;
 
     transition: all .3s linear;
   }
