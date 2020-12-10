@@ -1,19 +1,20 @@
 <template>
   <div class="product-list">
-    <h1>Письменные столы</h1>
-    ul.list-default
-    <ul class="flex">
-      <li
-        v-for="(product, index) in products"
-        :key="index">
-        <product-card
-          :title="product.title"
-          :price="product.price"
-          :imgUrl="product.imgUrl"
-          :count="product.count"
-        />
-      </li>
-    </ul>
+    <div class="container">
+      <h1>Письменные столы</h1>
+      <ul class="list flex">
+        <li class="list__element"
+            v-for="(product, index) in products"
+            :key="index">
+          <product-card
+              :title="product.title"
+              :price="product.price"
+              :imgUrl="product.imgUrl"
+              :count="product.count"
+          />
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -52,5 +53,11 @@
 
 <style type="scss" scoped>
 .product-list {
+  list {
+    li {
+      padding: 20px;
+    }
+  }
 }
+
 </style>
