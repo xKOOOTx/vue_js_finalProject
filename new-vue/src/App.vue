@@ -20,7 +20,7 @@ export default {
       {
         test: /\.scss$/,
         use: [
-          'vue-style-loader',
+          'vue-styles-loader',
           'css-loader',
           'sass-loader',
           'scss-loader'
