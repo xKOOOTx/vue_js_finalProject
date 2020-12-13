@@ -1,7 +1,9 @@
 <template>
   <li>
     <span v-bind:class="{done: todo.completed}">
-      <input type="checkbox" v-on:change="todo.completed = true">
+      <input type="checkbox"
+             v-model:checked="todo.completed = !todo.completed"
+      >
       <strong>{{ todo.id }}.</strong>
       {{ todo.title }}
     </span>
@@ -16,7 +18,7 @@ export default {
     todo: {
       type: Object,
       required: true
-    }
+    },
   },
 }
 </script>
