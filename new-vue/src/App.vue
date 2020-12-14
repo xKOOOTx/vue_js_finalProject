@@ -6,7 +6,6 @@
 
 <script>
 
-// import MyComponent from '@/components/MyComponent'
 import ProductList from '@/components/ProductList'
 
 export default {
