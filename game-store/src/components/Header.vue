@@ -56,6 +56,9 @@ export default {
         text-decoration: none;
         text-align: center;
       }
+      &_top {
+        font-size: 3.6rem;
+      }
       &_bottom {
         letter-spacing: 3rem;
       }
