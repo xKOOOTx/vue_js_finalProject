@@ -36,19 +36,6 @@ export default {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-
-      bottom: 4px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-
-      background-color: #3e5871;
-      border-color: #3e5871;
-    }
   }
   input {
     width: 80%;
