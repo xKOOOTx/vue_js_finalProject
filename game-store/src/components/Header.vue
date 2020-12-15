@@ -1,10 +1,10 @@
 <template>
-  <div class="">
-    <div class="header">
+  <div class="header-filter">
+    <div class="header center">
       <div class="header__left flex_1">
         <a href="index.html" class="header__logo_link">
-          <div class="header__logo top">historical</div>
-          <div class="header__logo bottom">games</div>
+          <div class="header__logo header__logo_top">historical</div>
+          <div class="header__logo header__logo_bottom">games</div>
         </a>
       </div>
       <div class="header__center flex_1">
@@ -35,21 +35,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .header-filter {
+    background: rgba(0, 0, 0, 0.5);
+  }
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     height: 8.3rem;
-    margin-top: 10px;
+
+    opacity: 100%;
 
     &__logo {
       text-transform: capitalize;
+      color: #fff;
+
       &_link {
         display: block;
+        text-decoration: none;
+        text-align: center;
+      }
+      &_bottom {
+        letter-spacing: 3rem;
       }
     }
-
     &__center {
       justify-content: space-around;
     }

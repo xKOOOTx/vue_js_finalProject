@@ -1,8 +1,9 @@
 <template>
   <div id="app container">
     <div class="header-background__image">
-      <Header class="center"/>
+      <Header />
       <Nav class="center-small" />
+      <HeaderMain />
     </div>
   </div>
 </template>
@@ -11,12 +12,14 @@
 import '@/assets/styles/main.scss'
 import Header from './components/Header'
 import Nav from './components/Nav'
+import HeaderMain from './components/HeaderMain'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Nav
+    Nav,
+    HeaderMain
   }
 }
 </script>
@@ -29,5 +32,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.header-background__image {
+  padding-top: 13px;
 }
 </style>

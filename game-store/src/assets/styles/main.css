@@ -39,7 +39,7 @@ body {
 }
 
 .header-background__image {
-  background-color: lightblue;
+  background: url("../images/background1screen.jpg") center no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

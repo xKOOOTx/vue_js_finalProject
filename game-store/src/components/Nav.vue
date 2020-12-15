@@ -30,7 +30,7 @@ export default {
   .nav__link {
     display: block;
 
-    font-family: inherit;
+    font-family: 'Langar', cursive;
     color: inherit;
     text-decoration: none;
     text-transform: capitalize;
