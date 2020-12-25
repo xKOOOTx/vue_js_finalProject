@@ -1,7 +1,7 @@
 <template>
   <header>
-    <HistoricalLogo/>
-    <Navigation/>
+    <HistoricalLogo class="center"/>
+    <Navigation class="center_small"/>
   </header>
 </template>
 
@@ -16,6 +16,7 @@
       Navigation
     }
 }
+
 </script>
 
 <style scoped>

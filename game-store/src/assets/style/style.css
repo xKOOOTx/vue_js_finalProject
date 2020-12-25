@@ -4,4 +4,28 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+.center {
+  padding-left: calc(50% - 474px);
+  padding-right: calc(50% - 474px);
+}
+
+.center_small {
+  padding-left: calc(50% - 696px);
+  padding-right: calc(50% - 696px);
+}
+
+* > a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */

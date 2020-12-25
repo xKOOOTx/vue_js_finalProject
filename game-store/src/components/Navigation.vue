@@ -1,6 +1,13 @@
 <template>
-  <div>
-    navigation
+  <div class="navigation">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">services</a></li>
+      <li><a href="#">gallery</a></li>
+      <li><a href="#">news</a></li>
+      <li><a href="#">contact us</a></li>
+    </ul>
   </div>
 </template>
 
@@ -10,6 +17,13 @@ name: "Navigation"
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  .navigation {
+    & ul {
+      display: flex;
+      & li {
 
+      }
+    }
+  }
 </style>
