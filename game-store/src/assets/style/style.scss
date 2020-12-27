@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  transition: all .2s ease-in;
 }
 html {
   font-size: 62.5%;
@@ -11,8 +13,8 @@ html {
   padding-right: calc(50% - 474px);
 }
 .center_small {
-  padding-left: calc(50% - 696px);
-  padding-right: calc(50% - 696px);
+  padding-left: calc(50% - 353px);
+  padding-right: calc(50% - 353px);
 }
 * > a {
   font-family: inherit;
@@ -22,4 +24,7 @@ html {
 
 .flex {
   display: flex;
+}
+.list {
+  list-style: none;
 }

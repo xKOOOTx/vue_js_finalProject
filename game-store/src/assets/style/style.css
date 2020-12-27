@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.2s ease-in;
 }
 
 html {
@@ -14,8 +15,8 @@ html {
 }
 
 .center_small {
-  padding-left: calc(50% - 696px);
-  padding-right: calc(50% - 696px);
+  padding-left: calc(50% - 353px);
+  padding-right: calc(50% - 353px);
 }
 
 * > a {
@@ -26,6 +27,10 @@ html {
 
 .flex {
   display: flex;
+}
+
+.list {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
